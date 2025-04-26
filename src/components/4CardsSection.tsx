@@ -11,8 +11,8 @@ export default function CardSection() {
 
             <div className="flex items-center gap-5 text-black">
             <div className="text-[40px] font-medium">14  </div>
-            <Image src={"/badgewrap.png"} alt="" width={60} height={60}/>
-           <Image className="ml-[90px] " src={"/avatargroup.png"} alt="" width={100} height={100} />
+            <Image src={"/images/badgewrap.png"} alt="" width={60} height={60}/>
+           <Image className="ml-[90px] " src={"/images/avatargroup.png"} alt="" width={100} height={100} />
 
             </div>
             <div className="flex gap-3 items-center mt-[10px]">
@@ -37,7 +37,7 @@ export default function CardSection() {
               <p className="text-[38px] font-medium text-black">10%</p>              
                
               <div className="flex flex-col items-center ">
-                <Image src="/image14.png" alt="Top Performer Badge" width={35} height={35} />
+                <Image src="/images/image14.png" alt="Top Performer Badge" width={35} height={35} />
   
                 <span className="bg-[#E0F2FE] text-[#1DA1F2] px-[8px] py-[4px] rounded-[15px] text-[12px] mt-2">
                   Top Performer
@@ -59,7 +59,7 @@ export default function CardSection() {
             <h2 className="font-bold text-[#1E1E1E] mb-[8px] text-[18px]">Financial Wellbeing</h2>
             <div className="flex items-center gap-65">
             <p className="font-medium text-[35px] text-[#1C222B]">20</p> 
-            <Image src="/badgewrap1.png" alt="Top Performer Badge" width={100} height={100} />
+            <Image src="/images/badgewrap1.png" alt="Top Performer Badge" width={100} height={100} />
             </div>
             <p className=" text-[15px] text-[#475467]">Total Franchisees</p> 
             <div className="w-full h-[1px] bg-gray-300 my-[7px]" />
@@ -84,17 +84,17 @@ export default function CardSection() {
             <h2 className="font-bold text-[#1E1E1E] text-[18px]">Prospect Leads</h2>
 
             <div className="bg-gray-100 rounded-[8px] flex items-center px-[12px] py-[10px] text-[13px] gap-3 h-14">
-              <Image src={"/avatar3.png"} alt="" width={40} height={40}/>
+              <Image src={"/images/avatar3.png"} alt="" width={40} height={40}/>
                 <h2 className="font-medium text-[15px] text-[#101828]"> Wade Warren</h2> <span className="ml-[40px] text-[14px] text-[#101828]"> Stage: <span className="font-medium"> Initial Inquiry</span>   </span>            
              
             </div>
             <div className="bg-gray-100 rounded-[8px] flex items-center px-[12px] py-[10px] text-[13px] gap-5 h-14">
-              <Image src={"/avatar4.png"} alt="" width={40} height={40}/>
+              <Image src={"/images/avatar4.png"} alt="" width={40} height={40}/>
                 <h2 className="font-medium text-[15px]  text-[#101828]"> Ava Wright</h2> <span className="ml-[40px] text-[14px] text-[#101828]"> Stage: <span className="font-medium"> Initial Inquiry</span>   </span>           
              
             </div>
             <div className="bg-gray-100 rounded-[8px] flex items-center px-[12px] py-[10px] text-[13px] gap-4 h-14">
-              <Image src={"/avatar5.png"} alt="" width={40} height={40}/>
+              <Image src={"/images/avatar5.png"} alt="" width={40} height={40}/>
                 <h2 className="font-medium text-[15px] text-[#101828]"> Cody Fisher</h2><span className="ml-[40px] text-[14px] text-[#101828]"> Stage: <span className="font-medium"> Initial Inquiry</span>   </span>                 
             </div>           
           </div>                        

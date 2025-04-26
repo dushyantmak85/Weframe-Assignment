@@ -17,8 +17,8 @@ export default function Dashboard() {
         {/* Header */}
 
         <div className="h-16 bg-grey flex items-center justify-end px-6 gap-4 ">
-           <Image src="/gear.png" alt="Top Performer Badge" width={23} height={23} />
-            <Image src="/avatar.png" alt="Top Performer Badge" width={30} height={30} />         
+           <Image src="/images/gear.png" alt="Top Performer Badge" width={23} height={23} />
+            <Image src="/images/avatar.png" alt="Top Performer Badge" width={30} height={30} />         
         </div>
         
         <div className="w-full h-[1px] bg-gray-300 my-[7px]" />

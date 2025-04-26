@@ -10,13 +10,13 @@ export default function Footer() {
             <div className="w-1/2  border-r">
               <div className="flex px-4 py-4 items-center justify-between mb-1">
                 <div className="text-xl font-semibold text-[#101828] ">Pending Questions</div>                
-                <Image src="/badge2.png" alt="" width={30} height={30}></Image>
+                <Image src="/images/badge2.png" alt="" width={30} height={30}></Image>
               </div>
               <div className="w-full h-[1px] bg-gray-300 mb-[10px] " />
               <div className="space-y-4 text-sm">
                 <div className="flex items-start gap-4 px-4 py-1">
                    <span className="flex items-center gap-3">
-                   <Circle stroke="#2FBDFF" fill="#2FBDFF"/><Image src={"/avatar1.png"} alt="" width={40} height={40}/>
+                   <Circle stroke="#2FBDFF" fill="#2FBDFF"/><Image src={"/images/avatar1.png"} alt="" width={40} height={40}/>
                     </span>
                   <div>
                     <div className="font-bold text-[#344054]">Phoenix Baker</div>
@@ -29,7 +29,7 @@ export default function Footer() {
               <div className="w-full h-[1px] bg-gray-200 mb-[10px] " />
               <div className="flex items-start gap-4 px-4 py-2">
                    <span className="flex items-center gap-3">
-                   <Circle stroke="#2FBDFF" fill="#2FBDFF"/><Image src={"/avatar2.png"} alt="" width={40} height={40}/>
+                   <Circle stroke="#2FBDFF" fill="#2FBDFF"/><Image src={"/images/avatar2.png"} alt="" width={40} height={40}/>
                     </span>
                   <div>
                     <div className="font-bold text-[#344054]">Koray Okumus</div>
@@ -44,17 +44,17 @@ export default function Footer() {
           
                <div className=" w-full p-6 bg-gray-50 flex-col justify-end ">
            
-            <Image src={"/Button.png"} alt="" width={30} height={30} className="ml-[47rem]"  />
+            <Image src={"/images/button.png"} alt="" width={30} height={30} className="ml-[47rem]"  />
              
             <div className="flex flex-col items-center justify-center gap-4">
-            <Image src="/logo.png" alt="" width={60} height={60}></Image>
+            <Image src="/images/logo.png" alt="" width={60} height={60}></Image>
               <div className="text-3xl font-bold mb-4 text-center text-black">Welcome to the AI Chat Assistant</div>
               <div className="flex items-center w-[90%]  bg-[#ffff]  rounded-3  px-4 py-2  text-gray-700 gap-118" >
               <input
                 type="text"
                 placeholder="Ask your question here..."                
               />
-             <Image src={"/vector.png"} alt="" width={20} height={20} />
+             <Image src={"/images/vector.png"} alt="" width={20} height={20} />
               </div>
             </div>
             
