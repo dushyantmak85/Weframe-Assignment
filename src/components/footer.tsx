@@ -1,4 +1,3 @@
-
 import Circle from "./CircleIcon"; // Import the Circle component
 
 import Image from "next/image";
@@ -6,74 +5,63 @@ import Image from "next/image";
 export default function Footer() {
     return(
         <>
-          <div className="ml-[210px] flex p-4 gap-4  bg-gray-50 ">
-      {/* Pending Questions Section */}
-      <div className=" bg-white rounded-lg  p-4 flex flex-col ">
-        <div className="flex items-center justify-between mb-4">
-          <h2 className="text-lg font-semibold">Pending Questions</h2>
-          <div className="bg-blue-500 text-white text-xs px-2 py-1 rounded-full">
-            02
-          </div>
-        </div>
+           <div className="flex bg-white border-t border-gray-200">
+          <div className="flex flex-1">
+            <div className="w-1/2  border-r">
+              <div className="flex px-4 py-4 items-center justify-between mb-1">
+                <div className="text-xl font-semibold text-[#101828] ">Pending Questions</div>                
+                <Image src="/Badge (2).png" alt="" width={30} height={30}></Image>
+              </div>
+              <div className="w-full h-[1px] bg-gray-300 mb-[10px] " />
+              <div className="space-y-4 text-sm">
+                <div className="flex items-start gap-4 px-4 py-1">
+                   <span className="flex items-center gap-3">
+                   <Circle stroke="#2FBDFF" fill="#2FBDFF"/><Image src={"/Avatar (1).png"} alt="" width={40} height={40}/>
+                    </span>
+                  <div>
+                    <div className="font-bold text-[#344054]">Phoenix Baker</div>
+                    <div className="text-gray-500">@phoenix · 5min ago</div>
+                    
+                  </div>
+                </div>
+                <div className="text-gray-700 ml-[40px]">What are the requirements for opening a new store?</div>
+                
+              <div className="w-full h-[1px] bg-gray-200 mb-[10px] " />
+              <div className="flex items-start gap-4 px-4 py-2">
+                   <span className="flex items-center gap-3">
+                   <Circle stroke="#2FBDFF" fill="#2FBDFF"/><Image src={"/Avatar (2).png"} alt="" width={40} height={40}/>
+                    </span>
+                  <div>
+                    <div className="font-bold text-[#344054]">Koray Okumus</div>
+                    <div className="text-gray-500">@koray· 4hr ago</div>
+                    
+                  </div>
+                </div>
+                <div className="text-gray-700 ml-[40px] mb-[10px]">How do I manage inventory effectively?</div>
+              </div>
+            </div>
 
-        {/* Questions List */}
-        <div className="flex flex-col gap-4 p-4">
-          {/* Question 1 */}
-          <div className="flex gap-3">
-            <div className="relative">
-              
-              <span className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-green-400 border-2 border-white rounded-full"></span>
-            </div>
-            <div className="flex-1">
-              <div className="flex justify-between text-sm">
-                <span className="font-semibold">Phoenix Baker</span>
-                <span className="text-gray-400">5min ago</span>
-              </div>
-              <div className="text-gray-500 text-sm">@phoenix</div>
-              <div className="mt-1 text-gray-700 text-sm">
-                What are the requirements for opening a new store?
-              </div>
-            </div>
-          </div>
-
-          {/* Question 2 */}
-          <div className="flex gap-3">
-            <div className="relative">
-             
-              <span className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-green-400 border-2 border-white rounded-full"></span>
-            </div>
-            <div className="flex-1">
-              <div className="flex justify-between text-sm">
-                <span className="font-semibold">Koray Okumus</span>
-                <span className="text-gray-400">4hr ago</span>
-              </div>
-              <div className="text-gray-500 text-sm">@koray</div>
-              <div className="mt-1 text-gray-700 text-sm">
-                How do I manage inventory effectively?
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Chat Assistant Section */}
-      <div className="flex-1 bg-white rounded-lg shadow flex flex-col items-center justify-center p-8">
-        <div className="flex flex-col items-center">
           
-          <h1 className="text-2xl font-semibold mb-6">
-            Welcome to the AI Chat Assistant
-          </h1>
-          <div className="w-full max-w-md">
-          <input
-  type="text"
-  placeholder="Ask your question here.."
-  className="w-full border border-gray-300 rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
-/>
+               <div className=" w-full p-6 bg-gray-50 flex-col justify-end ">
+           
+            <Image src={"/Button.png"} alt="" width={30} height={30} className="ml-[47rem]"  />
+             
+            <div className="flex flex-col items-center justify-center gap-4">
+            <Image src="/Logo.png" alt="" width={60} height={60}></Image>
+              <div className="text-3xl font-bold mb-4 text-center text-black">Welcome to the AI Chat Assistant</div>
+              <div className="flex items-center w-[90%]  bg-[#ffff]  rounded-3  px-4 py-2  text-gray-700 gap-118" >
+              <input
+                type="text"
+                placeholder="Ask your question here..."                
+              />
+             <Image src={"/Vector.png"} alt="" width={20} height={20} />
+              </div>
+            </div>
+            
+            </div>           
+           
           </div>
         </div>
-      </div>
-    </div>
-        
         
         </>         
               
