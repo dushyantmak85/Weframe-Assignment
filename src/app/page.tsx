@@ -7,24 +7,15 @@ import Circle from "@/components/CircleIcon"; // Import the Circle component
 import { CheckMark } from "@/components/CircleIcon";
 
 
+
+
 export default function Dashboard() {
-  const [questions, setQuestions] = useState([
-    {
-      user: "Phoenix Baker",
-      handle: "@phoenix",
-      time: "5m ago",
-      question: "What are the requirements for opening a new store?",
-    },
-    {
-      user: "Koray Okumus",
-      handle: "@koray",
-      time: "4hr ago",
-      question: "How do I manage inventory effectively?",
-    },
-  ]);
+ 
 
   return (
-    <div className="flex p-4 gap-4 min-h-screen bg-[#F3F7FA] px-[36px] py-[32px] font-sans text-[14px] text-[#1E1E1E] ">
+    <>
+    
+    <div className="flex w-full p-10 gap-4 min-h-screen bg-[#F3F7FA] px-[36px] py-[32px] font-sans text-[14px] text-[#1E1E1E] ">
       <div className="flex w-full ">
 
        <Sidebar/>
@@ -80,7 +71,7 @@ export default function Dashboard() {
             <div className="flex items-center gap-5">
             <div className="text-[40px] font-medium">14  </div>
             <Image src={"/BadgeWrap.png"} alt="" width={60} height={60}/>
-           <Image src={"/AvatarGroup.png"} alt="" width={100} height={100} />
+           <Image className="ml-[90px] " src={"/AvatarGroup.png"} alt="" width={100} height={100} />
 
             </div>
             <div className="flex gap-3 items-center mt-[25px]">
@@ -114,32 +105,131 @@ export default function Dashboard() {
             </div>
             <p className=" text-[14px] text-gray-700">Sales Growth</p>
             <div className="w-full h-[1px] bg-gray-300 my-[20px]" />
-            <div className="w-90 h-24 bg-[#F6F7FB]   text-black font-medium rounded-[8px]">
-              <h1 className="mt-2"> Feedback</h1>
+            <div className="w-90 h-24 bg-[#F6F7FB]   rounded-[8px]">
+              <h1 className="ml-[15px] font-medium mt-[10px]"> Feedback</h1> 
+              <div className="flex  mt-[10px] ml-[15px]  gap-2"><span className="mt-[6px]"><Circle/></span>  Franchisees are requesting more detailed training materials</div>
+             
             </div>
           </div>
           
 
           <div className="bg-white px-[24px] py-[20px] rounded-[8px]  relative border border-[#E0E0E0] ">
-            <div className="absolute top-[10px] right-[10px] bg-[#FB923C] text-white text-[12px] px-[8px] py-[2px] rounded">Soumalya</div>
-            <h2 className="font-medium text-[#1E1E1E] mb-[10px]">Financial Wellbeing</h2>
-            <p>Total Franchisees: <strong>20</strong> <span className="text-green-500 text-sm">+2.1%</span></p>
-            <p>Target: $500,000</p>
-            <p>Current: $450,000</p>
+            
+            <h2 className="font-bold text-[#1E1E1E] mb-[10px] text-[18px]">Financial Wellbeing</h2>
+            <div className="flex items-center gap-65">
+            <p className="font-medium text-[35px]">20</p> 
+            <Image src="/2.1.png" alt="Top Performer Badge" width={100} height={100} />
+            </div>
+            <p className=" text-[15px]">Total Franchisees</p> 
+            <div className="w-full h-[1px] bg-gray-300 my-[20px]" />
+            <div className="flex items-center gap-10">
+            <div className="w-50 h-24 bg-[#F6F7FB] flex flex-col items-center justify-center px-4  rounded-[8px]">  
+              
+            <h2 className="text-[15px] font-medium">Target</h2>
+            <p className="text-[20px] font-bold"> $500,000</p>
+            </div>
+
+            <div className="w-50 h-24 bg-[#F6F7FB] flex flex-col items-center justify-center px-4  rounded-[8px]">  
+              
+              <h2 className="text-[15px] font-medium">Current</h2>
+              <p className="text-[20px] font-bold"> $450,000</p>
+              </div>
+
+            </div>
+         
           </div>
 
-          <div className="bg-white px-[24px] py-[20px] rounded-[9px] border border-[#E0E0E0] ">
-            <h2 className="font-medium text-[#1E1E1E] mb-[10px]">Prospect Leads</h2>
-            <div className="bg-gray-100 rounded-[8px] px-[12px] py-[10px] text-[13px]">
-              <ul className="space-y-[4px]">
-                <li>Wade Warren – Stage: Initial Inquiry</li>
-                <li>Ava Wright – Stage: Initial Inquiry</li>
-                <li>Cody Fisher – Stage: Initial Inquiry</li>
-              </ul>
+          <div className="bg-white px-[24px] py-[20px] flex flex-col gap-2 grounded-[9px] border border-[#E0E0E0] ">
+            <h2 className="font-bold text-[#1E1E1E] mb-[10px] text-[18px]">Prospect Leads</h2>
+
+            <div className="bg-gray-100 rounded-[8px] flex items-center px-[12px] py-[10px] text-[13px] gap-3 h-17">
+              <Image src={"/Avatar (3).png"} alt="" width={40} height={40}/>
+                <h2 className="font-medium text-[15px]"> Wade Warren</h2> <span className="ml-[40px] text-[14px] font-grey"> Stage: <span className="font-medium"> Initial Inquiry</span>   </span>            
+             
+            </div>
+            <div className="bg-gray-100 rounded-[8px] flex items-center px-[12px] py-[10px] text-[13px] gap-5 h-17">
+              <Image src={"/Avatar (4).png"} alt="" width={40} height={40}/>
+                <h2 className="font-medium text-[15px]"> Ava Wright</h2> <span className="ml-[40px] text-[14px] font-grey"> Stage: <span className="font-medium"> Initial Inquiry</span>   </span>           
+             
+            </div>
+            <div className="bg-gray-100 rounded-[8px] flex items-center px-[12px] py-[10px] text-[13px] gap-4 h-17">
+              <Image src={"/Avatar (5).png"} alt="" width={40} height={40}/>
+                <h2 className="font-medium text-[15px]"> Cody Fisher</h2><span className="ml-[40px] text-[14px] font-grey"> Stage: <span className="font-medium"> Initial Inquiry</span>   </span>                 
+            </div>           
+          </div>                        
+        </div>              
+      </div>       
+    </div>
+    <div className="ml-[210px] flex p-4 gap-4  bg-gray-50 ">
+      {/* Pending Questions Section */}
+      <div className=" bg-white rounded-lg  p-4 flex flex-col ">
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-lg font-semibold">Pending Questions</h2>
+          <div className="bg-blue-500 text-white text-xs px-2 py-1 rounded-full">
+            02
+          </div>
+        </div>
+
+        {/* Questions List */}
+        <div className="flex flex-col gap-4 p-4">
+          {/* Question 1 */}
+          <div className="flex gap-3">
+            <div className="relative">
+              
+              <span className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-green-400 border-2 border-white rounded-full"></span>
+            </div>
+            <div className="flex-1">
+              <div className="flex justify-between text-sm">
+                <span className="font-semibold">Phoenix Baker</span>
+                <span className="text-gray-400">5min ago</span>
+              </div>
+              <div className="text-gray-500 text-sm">@phoenix</div>
+              <div className="mt-1 text-gray-700 text-sm">
+                What are the requirements for opening a new store?
+              </div>
+            </div>
+          </div>
+
+          {/* Question 2 */}
+          <div className="flex gap-3">
+            <div className="relative">
+             
+              <span className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-green-400 border-2 border-white rounded-full"></span>
+            </div>
+            <div className="flex-1">
+              <div className="flex justify-between text-sm">
+                <span className="font-semibold">Koray Okumus</span>
+                <span className="text-gray-400">4hr ago</span>
+              </div>
+              <div className="text-gray-500 text-sm">@koray</div>
+              <div className="mt-1 text-gray-700 text-sm">
+                How do I manage inventory effectively?
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Chat Assistant Section */}
+      <div className="flex-1 bg-white rounded-lg shadow flex flex-col items-center justify-center p-8">
+        <div className="flex flex-col items-center">
+          
+          <h1 className="text-2xl font-semibold mb-6">
+            Welcome to the AI Chat Assistant
+          </h1>
+          <div className="w-full max-w-md">
+          <input
+  type="text"
+  placeholder="Ask your question here.."
+  className="w-full border border-gray-300 rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+/>
+          </div>
+        </div>
+      </div>
     </div>
+    
+    
+    </> 
+    
   );
-}
+} 
